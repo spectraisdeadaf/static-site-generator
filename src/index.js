@@ -17,7 +17,7 @@ const formatter = (template, { date, title, content, author }) =>
 	template
 		.replace(/<!-- PUBLISH_DATE -->/g, date)
 		.replace(/<!-- TITLE -->/g, title)
-    	.replace(/<!-- AUTHOR -->/g, author)
+		.replace(/<!-- AUTHOR -->/g, author)
 		.replace(/<!-- CONTENT -->/g, content)
 
 const saveFile = (filename, contents) => {
