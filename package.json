@@ -1,0 +1,27 @@
+{
+	"name": "static-site-generator",
+	"version": "1.0.0",
+	"description": "a static-site-generator made in node",
+	"keywords": [],
+	"author": "spectraisdeadaf",
+	"license": "MIT",
+	"type": "module",
+	"scripts": {
+		"lint": "eslint .",
+		"dev": "nodemon -e js,md,html --ignore dist/ src/index.js",
+		"start": "node src/index.js"
+	},
+	"dependencies": {
+		"glob": "^7.2.3",
+		"gray-matter": "^4.0.2",
+		"marked": "^4.0.18",
+		"mkdirp": "^1.0.4"
+	},
+	"devDependencies": {
+		"eslint": "^8.20.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-prettier": "^3.1.4",
+		"nodemon": "^1.4.1",
+		"prettier": "^2.0.5"
+	}
+}
